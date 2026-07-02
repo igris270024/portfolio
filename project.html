@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects Section</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0d1117;
+            color: #ffffff;
+        }
+
+        /* Projects Section */
+        #projects {
+            min-height: 100vh;
+            padding: 60px 10%;
+            text-align: center;
+            background: linear-gradient(135deg, #0d1117, #161b22);
+        }
+
+        #projects h2 {
+            font-size: 40px;
+            color: #58a6ff;
+            margin-bottom: 45px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        /* Cards Container */
+        .projects-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        /* Individual Card */
+        .project-card {
+            background: #1c2128;
+            width: 320px;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #30363d;
+            box-shadow: 0 0 15px rgba(88, 166, 255, 0.15);
+            transition: 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            border-color: #58a6ff;
+            box-shadow: 0 0 25px rgba(88, 166, 255, 0.4);
+        }
+
+        .project-card h3 {
+            color: #58a6ff;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        .project-card p {
+            color: #c9d1d9;
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+
+        .project-card strong {
+            color: #79c0ff;
+        }
+
+        .project-card a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            text-decoration: none;
+            background: #238636;
+            color: white;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .project-card a:hover {
+            background: #2ea043;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Projects Section -->
+    <section id="projects">
+
+        <h2>My Projects</h2>
+
+        <div class="projects-container">
+
+            <!-- Project 1 -->
+            <div class="project-card">
+                <h3>Calculator App</h3>
+
+                <p>
+                    A calculator application that performs addition,
+                    subtraction, multiplication, and division using a
+                    clean and responsive interface.
+                </p>
+
+                <p><strong>Tech Used:</strong> HTML, CSS, JavaScript</p>
+
+                <a href="#" target="_blank">View Project</a>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <h3>To-Do List</h3>
+
+                <p>
+                    A task management application that allows users to
+                    add, delete, and mark daily tasks as completed with
+                    dynamic updates.
+                </p>
+
+                <p><strong>Tech Used:</strong> HTML, CSS, JavaScript</p>
+
+                <a href="#" target="_blank">View Project</a>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <h3>Simple Blog Page</h3>
+
+                <p>
+                    A responsive blog webpage featuring articles,
+                    navigation, and a modern layout optimized for desktop
+                    and mobile devices.
+                </p>
+
+                <p><strong>Tech Used:</strong> HTML, CSS</p>
+
+                <a href="#" target="_blank">View Project</a>
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+</html>
