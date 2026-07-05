@@ -5,54 +5,60 @@ body {
     background: linear-gradient(135deg, #74ebd5, #9face6);
 }
 
+/* Section */
+#profiles {
+    padding: 20px;
+}
+
 /* Title */
 .title {
     text-align: center;
     color: white;
-    margin-top: 30px;
-    font-size: 32px;
+    font-size: 30px;
+    margin-bottom: 35px;
 }
 
 /* Container */
 .profile-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 220px);
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 25px;
-    padding: 40px;
+    gap: 35px 60px; /* Row gap | Column gap */
 }
 
 /* Card */
 .profile-card {
-    width: 250px;
+    width: 220px;
     background: white;
-    border-radius: 20px;
-    padding: 20px;
+    border-radius: 18px;
+    padding: 15px;
     text-align: center;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     transition: 0.3s;
 }
 
 .profile-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-8px);
 }
 
 /* Image */
 .profile-card img {
-    width: 120px;
-    height: 120px;
+    width: 95px;
+    height: 95px;
     border-radius: 50%;
     border: 4px solid #6c63ff;
+    object-fit: cover;
 }
 
 /* Name */
 .profile-card h3 {
-    margin: 10px 0;
+    margin: 12px 0;
+    font-size: 20px;
 }
 
 /* Skills */
 .skills {
-    margin: 10px 0;
+    margin: 12px 0;
 }
 
 .skills span {
@@ -69,7 +75,7 @@ body {
 .github-btn {
     display: inline-block;
     margin-top: 10px;
-    padding: 10px 15px;
+    padding: 8px 14px;
     background: #24292e;
     color: white;
     text-decoration: none;
@@ -79,4 +85,16 @@ body {
 
 .github-btn:hover {
     background: #0366d6;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .profile-container {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    body {
+        overflow-y: auto;
+    }
 }
